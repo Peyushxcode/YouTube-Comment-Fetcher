@@ -1,0 +1,99 @@
+html, body {
+    height: 100%; /* Make sure both html and body take the full height */
+    background-color: #fbc4ab;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fff1e6;
+}
+
+.comment strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #e5383b;
+}
+
+.replies {
+    margin-left: 20px;
+}
+
+.reply {
+    border-left: 2px solid #e5383b;
+    padding-left: 10px;
+    margin-top: 5px;
+    background: #fff1e6;
+    border-radius: 5px;
+}
+
+small {
+    display: block;
+    color: #666;
+}
+
+.progress {
+    display: none; /* Hide the spinner initially */
+}
+section {
+    min-height: 100%; /* Ensures the section takes full height */
+}
+h1 {
+    text-align: left;
+    color: #333;
+    font-family: "Great Vibes", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size:xx-large;
+}
+.features {
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.features .columns {
+    margin-top: 1rem;
+}
+
+.features .column {
+    padding: 1rem;
+    border-radius: 15px;
+    background-color:#fcbf49 ;
+    border:5px solid #fbc4ab;
+    margin: 1rem 0;
+    transition: transform 0.2s;
+}
+
+.features .column:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+img{
+    height: 15em;
+    width: 15em;
+}
