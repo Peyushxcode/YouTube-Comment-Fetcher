@@ -2,8 +2,8 @@ const apiKey = ''; // Replace with your API key
 const maxResults = 100;
 
 async function getComments(videoId, hashtag) {
-    const spinner = document.querySelector('.progress'); // Target the spinner
-    spinner.style.display = 'block'; // Show spinner
+    const spinner = document.querySelector('.progress'); 
+    spinner.style.display = 'block'; 
     let comments = [];
     let nextPageToken = '';
 
@@ -39,7 +39,7 @@ async function getComments(videoId, hashtag) {
     } catch (error) {
         console.log("Error Fetching Comments", error);
     } finally {
-        spinner.style.display = 'none'; // Hide spinner after the comments are fetched
+        spinner.style.display = 'none'; 
     }
 
     return comments;
@@ -99,7 +99,7 @@ function displayComments(comments) {
 }
 
 document.getElementById('comment-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Stop the default form submission
+    event.preventDefault(); 
 
     const videoId = document.querySelector('#commFetch').value; // Get the video ID from the input
     const hashtag = document.querySelector('#hashtagInput').value; // Get the hashtag from the input
@@ -108,7 +108,7 @@ document.getElementById('comment-form').addEventListener('submit', function(even
         .then(comments => {
             displayComments(comments);
             // Uncomment the line below if you want to export comments to Excel
-            exportToExcel(comments); 
+            // exportToExcel(comments); 
         })
         .catch(error => {
             console.error('Error fetching comments:', error);
