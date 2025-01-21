@@ -1,4 +1,4 @@
-const apiKey = ''; // Replace with your API key
+const apiKey = 'AIzaSyCsDZTKiR-ecu5372rmxTppKCgaqDTTQvM'; // Replace with your API key
 const maxResults = 100;
 
 async function getComments(videoId, hashtag) {
