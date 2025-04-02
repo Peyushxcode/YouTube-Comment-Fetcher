@@ -108,7 +108,7 @@ document.getElementById('comment-form').addEventListener('submit', function(even
         .then(comments => {
             displayComments(comments);
             // Uncomment the line below if you want to export comments to Excel
-            // exportToExcel(comments); 
+            exportToExcel(comments); 
         })
         .catch(error => {
             console.error('Error fetching comments:', error);
